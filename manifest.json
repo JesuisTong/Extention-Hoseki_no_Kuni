@@ -1,0 +1,22 @@
+{
+  "name": "Theme_HOSEKI",
+  "description": "__MSG_extDesc__",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "/icon/GemZoom/logo_16.png",
+    "48": "/icon/GemZoom/logo_48.png",
+    "128": "/icon/GemZoom/logo_128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "/icon/GemZoom/logo_16.png",
+      "48": "/icon/GemZoom/logo_48.png",
+      "128": "/icon/GemZoom/logo_128.png"
+    }
+  },
+  "chrome_url_overrides": {
+    "newtab": "/index.html"
+  },
+  "default_locale": "en"
+}
