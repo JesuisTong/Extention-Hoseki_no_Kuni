@@ -18,5 +18,6 @@
   "chrome_url_overrides": {
     "newtab": "/index.html"
   },
-  "default_locale": "en"
+  "default_locale": "en",
+  "offline_enabled": true
 }
