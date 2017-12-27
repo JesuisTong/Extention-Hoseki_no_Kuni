@@ -13,11 +13,15 @@
       "16": "/icon/GemZoom/logo_16.png",
       "48": "/icon/GemZoom/logo_48.png",
       "128": "/icon/GemZoom/logo_128.png"
-    }
+    },
+    "default_popup": "/popup.html"
   },
   "chrome_url_overrides": {
     "newtab": "/index.html"
   },
   "default_locale": "en",
+  "permissions": [
+    "tabs"
+  ],
   "offline_enabled": true
 }
