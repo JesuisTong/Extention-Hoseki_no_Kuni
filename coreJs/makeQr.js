@@ -1,6 +1,6 @@
 (function () {
   var dom = document.querySelector('.qrCode');
-  chrome.tabs.query({ active: true }, function (tabs) {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     if (!tabs.length) {
       return;
     }
