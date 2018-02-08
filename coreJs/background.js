@@ -1,12 +1,13 @@
 (() => {
   const onBeforeSendHeadersHandle = (details) => {
     if (details.url.indexOf('//i.pximg.net') > -1) {
-      const rh = details.requestHeaders.map(i => {
-        if (i.name === 'Referer') {
-          i.value = 'https://www.pixiv.net';
+      const rh = [
+        ...details.requestHeaders,
+        {
+          name: 'Referer',
+          value: 'https://www.pixiv.net'
         }
-        return i;
-      });
+      ];
       return {requestHeaders: rh};
     }
     return {requestHeaders: details.requestHeaders};
