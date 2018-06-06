@@ -4,15 +4,15 @@
   "version": "0.1.0",
   "manifest_version": 2,
   "icons": {
-    "16": "/icon/GemZoom/logo_16.png",
-    "48": "/icon/GemZoom/logo_48.png",
-    "128": "/icon/GemZoom/logo_128.png"
+    "16": "/icon/logo/logo_16.png",
+    "48": "/icon/logo/logo_48.png",
+    "128": "/icon/logo/logo_128.png"
   },
   "browser_action": {
     "default_icon": {
-      "16": "/icon/GemZoom/logo_16.png",
-      "48": "/icon/GemZoom/logo_48.png",
-      "128": "/icon/GemZoom/logo_128.png"
+      "16": "/icon/logo/logo_16.png",
+      "48": "/icon/logo/logo_48.png",
+      "128": "/icon/logo/logo_128.png"
     },
     "default_popup": "/popup.html"
   },
