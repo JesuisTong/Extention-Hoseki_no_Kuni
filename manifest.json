@@ -22,6 +22,13 @@
   "chrome_url_overrides": {
     "newtab": "/index.html"
   },
+  "content_scripts": [
+    {
+      "matches": ["*://t.weipaitang.com/*", "*://w.weipaitang.com/*", "*://dev.weipaitang.com/*"],
+      "css": ["/coreJs/Button/index.css"],
+      "js": ["/coreJs/Button/index.js"]
+    }
+  ],
   "default_locale": "en",
   "permissions": [
     "tabs",
