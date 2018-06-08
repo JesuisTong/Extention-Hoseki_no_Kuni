@@ -7,7 +7,21 @@
   <script src="/coreJs/externals/qrCode.js"></script>
   <script src="/coreJs/externals/jquery.min.js"></script>
   <style>
-    .qrCode {
+    .demos {
+      display: flex;
+      flex-flow: row wrap;
+      max-width: 300px;
+    }
+    .demos button {
+      background: #ab2333;
+      width: 80px;
+      height: 40px;
+    }
+
+    .container {
+      display: none;
+    }
+    .container .qrCode {
       width: 176px;
       height: 176px;
       padding: 24px;
@@ -15,7 +29,7 @@
       flex-direction: column;
       justify-content: center;
     }
-    .title {
+    .container .title {
       margin: 14px 0 10px;
       width: 224px;
       font-size: 20px;
@@ -26,10 +40,20 @@
   </style>
 </head>
 <body>
+  <div class="demos">
+    <button class="notification">提示</button>
+    <button id="red" class="changeColor">变色</button>
+    <button class="hackElement" disabled>增／改页面元素</button>
+    <button class="tts">tts</button>
+    <button class="qCode">qrCode</button>
+    <button class="changeColor" disabled>绕过简单防盗链</button>
+  </div>
+  <input type="text" class="ttts" placeholder="读一读">
   <div class="container">
     <div class="qrCode"></div>
     <div class="title">当前页面二维码</div>
   </div>
 </body>
+<script src="/demo.js"></script>
 <script src="/coreJs/makeQr.js"></script>
 </html>

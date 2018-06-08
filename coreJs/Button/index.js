@@ -12,5 +12,4 @@
     console.log('clicked!');
     div.style.display = 'none';
   });
-
 })()

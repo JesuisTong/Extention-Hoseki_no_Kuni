@@ -31,10 +31,14 @@
   ],
   "default_locale": "en",
   "permissions": [
+    "activeTab",
+    "background",
+    "history",
+    "notifications",
     "tabs",
+    "tts",
     "webRequest",
     "webRequestBlocking",
-    "background",
     "*://i.pximg.net/"
   ],
   "offline_enabled": true

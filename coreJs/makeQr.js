@@ -5,13 +5,15 @@
       if (!tabs.length) {
         return;
       }
-      setTimeout(() => {
-        new QRCode(dom, {
-          width: 177,
-          height: 177,
-          text: tabs[0].url
-        })
-      }, 200);
+      if (dom) {
+        setTimeout(() => {
+          new QRCode(dom, {
+            width: 177,
+            height: 177,
+            text: tabs[0].url
+          })
+        }, 200);
+      }
     });
   });
 }())

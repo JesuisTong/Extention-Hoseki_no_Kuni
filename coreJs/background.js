@@ -18,3 +18,9 @@
     ["blocking", "requestHeaders"]
   )
 })()
+
+function historyListen() {
+  chrome.history.onVisited.addListener()
+}
+
+// historyListen();
